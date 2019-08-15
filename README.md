@@ -1,7 +1,7 @@
 # JavaFX-todolist-
 javaFX todolist with file.txt database 
-* [Preview] - Preview
-[Preview]: <https://youtu.be/paTo-gPXmR4>
+* [URL] - Preview
+[URL]: <https://youtu.be/paTo-gPXmR4>
 
 
 
