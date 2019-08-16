@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.DialogPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<DialogPane fx:id="deleteDilogPane" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.dialog.info.InfoDialogController">
+
+    <content>
+        <GridPane alignment="CENTER" vgap="15">
+            <Label alignment="CENTER" text="this is my first javafx app i hope u like it" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+            <Label fx:id="gmail" alignment="CENTER" onMouseClicked="#openGmail" onMouseEntered="#focusGmail" onMouseExited="#unfocusGmail" prefHeight="17.0" prefWidth="210.0" text="madjidmadjid0808@gmail.com" textFill="#3d32bc" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+            <Label fx:id="instagram" alignment="CENTER" onMouseClicked="#openGram" onMouseEntered="#focusGram" onMouseExited="#unfocusGram" prefHeight="17.0" prefWidth="211.0" text="IG: @abdeel_madjid" textFill="#3d32bc" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+         <columnConstraints>
+            <ColumnConstraints />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+         </rowConstraints>
+
+
+
+
+
+
+        </GridPane>
+    </content>
+</DialogPane>
