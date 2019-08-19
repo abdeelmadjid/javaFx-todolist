@@ -16,14 +16,14 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane fx:id="mainUi" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MainUiController">
+<BorderPane stylesheets="@style.css" fx:id="mainUi" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MainUiController">
     <top>
         <HBox alignment="CENTER_LEFT">
             <MenuBar>
                 <padding>
                     <Insets left="0" />
                 </padding>
-                <Menu fx:id="menu" text="file">
+                <Menu fx:id="menu" text="file" >
                     <items>
                         <MenuItem  onAction="#addNewData" text="new file" />
                         <SeparatorMenuItem />
@@ -33,7 +33,8 @@
             </MenuBar>
 
 
-            <ToggleButton fx:id="todayAllToggle" onAction="#todayOrAll" prefWidth="50.0" text="today">
+            <ToggleButton  fx:id="todayAllToggle" onAction="#todayOrAll" prefWidth="50.0" text="today">
+
 
                 <tooltip>
                     <Tooltip style="-fx-background-color:#287EFF;" text="show today data only or all data" />

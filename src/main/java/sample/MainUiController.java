@@ -51,6 +51,7 @@ public class MainUiController {
     @FXML
     public void initialize() throws FileNotFoundException {
 
+
         //setting up the info menuItem dialog
         MenuItem info=new MenuItem("info");
         info.setOnAction(new EventHandler<ActionEvent>() {
@@ -92,6 +93,7 @@ public class MainUiController {
         });
          //adding the todoData to the list view
         toDoListView.setItems(sortedList);
+        //todayAllToggle.setStyle("-fx-background-color: transparent");
         //make the list view selection mode to single (user cant select multiple items in list view)
         toDoListView.getSelectionModel().setSelectionMode(SelectionMode.SINGLE);
         //add selection listener for the list view to update UI data (todoTextArea-date label
@@ -143,7 +145,7 @@ public class MainUiController {
 
 
                         //getting and initialzing the date and warrning icon
-                        Image image=new Image("sample/icons/warning.png");
+                        Image image=new Image("sample/resources/icons/warning.png");
                         LocalDate now = LocalDate.now();
                         //setting the date of formatt (2019-12-31) like the date we have in our data
                         DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy-MM-dd");
@@ -319,10 +321,12 @@ public class MainUiController {
                 }
             });
             toDoListView.setItems(filteredList);
+           // todayAllToggle.setStyle("-fx-background-color: aqua");
             todayAllToggle.setText("All");
 
         }else{
             toDoListView.setItems(sortedList);
+          //  todayAllToggle.setStyle("-fx-background-color: transparent");
             todayAllToggle.setText("today");
 
         }

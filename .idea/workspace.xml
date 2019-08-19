@@ -7,9 +7,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="244e221c-d77b-41ef-9229-aa6caeceaeac" name="Default Changelist" comment="redme image file update">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/New Bitmap Image.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/New Bitmap Image.bmp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/main/sample/MainUiController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/sample/MainUiController$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/main/sample/MainUiController$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/sample/MainUiController$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/main/sample/MainUiController$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/sample/MainUiController$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/main/sample/MainUiController$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/sample/MainUiController$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/main/sample/MainUiController$5$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/sample/MainUiController$5$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/main/sample/MainUiController$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/sample/MainUiController$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/main/sample/MainUiController$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/sample/MainUiController$6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/main/sample/MainUiController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/sample/MainUiController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/main/sample/icons/warning.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/main/sample/mainUi.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/sample/mainUi.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sample/MainUiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sample/MainUiController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sample/icons/warning.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sample/resources/icons/warning.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sample/mainUi.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sample/mainUi.fxml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,6 +39,7 @@
       <list>
         <option value="FxmlFile" />
         <option value="Class" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -42,26 +54,34 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1PEEHooQ4uyph3xRrS0gzjGtPWt" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Language Defaults" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\madjid\Documents\IdeaProjects\IdeaProjects\javaFX todolist\src\main\java\sample" />
+      <recent name="C:\Users\madjid\Documents\IdeaProjects\IdeaProjects\TodoListLearning\src\main\java\sample\icons" />
+      <recent name="C:\Users\madjid\Documents\IdeaProjects\IdeaProjects\TodoListLearning\src\main\java" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="sample.resources" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\madjid\Documents\IdeaProjects\IdeaProjects\TodoListLearning\src\main\java\sample\icons" />
       <recent name="C:\Users\madjid\Documents\IdeaProjects\IdeaProjects\TodoListLearning\src\main\java\sample" />
       <recent name="C:\Users\madjid\Documents\IdeaProjects\IdeaProjects\TodoListLearning\src\main\resources" />
       <recent name="C:\Users\madjid\Documents\IdeaProjects\IdeaProjects\TodoListLearning\src\main\java\sample\datamodel" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\madjid\Documents\IdeaProjects\IdeaProjects\TodoListLearning\src\main\java\sample\icons" />
-      <recent name="C:\Users\madjid\Documents\IdeaProjects\IdeaProjects\TodoListLearning\src\main\java" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -116,6 +136,8 @@
       <workItem from="1565430772745" duration="55000" />
       <workItem from="1565574620925" duration="927000" />
       <workItem from="1565914847163" duration="722000" />
+      <workItem from="1565916709415" duration="10000" />
+      <workItem from="1566173975793" duration="1764000" />
     </task>
     <servers />
   </component>
@@ -130,7 +152,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

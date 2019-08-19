@@ -1,0 +1,10 @@
+#todayAllToggle:selected{
+    -fx-background-color: #0096C9;
+    -fx-text-fill: white;
+}
+#todayAllToggle{
+     -fx-background-color: transparent;
+}
+#todayAllToggle:hover{
+    -fx-background-color: #00afee;
+}
