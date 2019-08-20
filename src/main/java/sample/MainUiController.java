@@ -9,7 +9,6 @@ import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.control.*;
-import javafx.scene.image.Image;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.BorderPane;
@@ -158,7 +157,7 @@ public class MainUiController {
 
 
                         //getting and initialzing the date and warrning icon
-                        Image image=new Image("sample/resources/icons/warning.png");
+
                         LocalDate now = LocalDate.now();
                         //setting the date of formatt (2019-12-31) like the date we have in our data
                         DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy-MM-dd");
@@ -177,7 +176,7 @@ public class MainUiController {
 
                                 setStyle("-fx-background-color:#e53935;");
                                // setTextFill(Color.WHITE);
-                               // setGraphic(new ImageView(image));
+
 
 
 
