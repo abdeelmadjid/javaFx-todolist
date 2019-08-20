@@ -10,7 +10,6 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.control.*;
 import javafx.scene.image.Image;
-import javafx.scene.image.ImageView;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.BorderPane;
@@ -18,11 +17,13 @@ import javafx.util.Callback;
 import sample.datamodel.ToDoDataHandeler;
 import sample.datamodel.ToDoItem;
 import sample.dialog.addData.AddNewDialogController;
+import sample.dialog.editData.EditData;
 
 import java.io.FileNotFoundException;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
-import java.util.*;
+import java.util.Comparator;
+import java.util.Optional;
 import java.util.function.Predicate;
 
 public class MainUiController {
@@ -50,6 +51,7 @@ public class MainUiController {
 
     @FXML
     public void initialize() throws FileNotFoundException {
+
 
 
         //setting up the info menuItem dialog
@@ -113,15 +115,26 @@ public class MainUiController {
         toDoListView.getSelectionModel().selectFirst();
         //setting up the context menu when right click on item in the listveiw a popup menu will come up that have menuItem of  deleting item selected
         contextMenu=new ContextMenu();
-        MenuItem delteCntxMenu=new MenuItem("delete this item");
+        MenuItem delteCntxMenu=new MenuItem(" delete ");
         delteCntxMenu.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
                 deleteItemAlert();
             }
         });
-        //add the menuItem to the context menu
-        contextMenu.getItems().add(delteCntxMenu);
+
+        ///setting up edit context menu when right click on item
+        contextMenu=new ContextMenu();
+        MenuItem editCntxMenu=new MenuItem("  edit ");
+        editCntxMenu.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                editItemAlert();
+            }
+        });
+        //add the menuItems to the context menu
+        contextMenu.getItems().addAll(editCntxMenu,delteCntxMenu);
+
 
 
 
@@ -162,13 +175,14 @@ public class MainUiController {
                             LocalDate itemDate=LocalDate.parse(item.getDate().format(dtf));
                             if (itemDate.equals(now)){
 
-                              //  setStyle("-fx-background-color:#00c853;");
-                                setGraphic(new ImageView(image));
-                               // setTextFill(Color.RED);
+                                setStyle("-fx-background-color:#e53935;");
+                               // setTextFill(Color.WHITE);
+                               // setGraphic(new ImageView(image));
+
 
 
                             }else if(itemDate.isAfter(now)&& itemDate.isBefore(now.plusDays(2))){
-                                setStyle("-fx-background-color:#00c853;");
+                                setStyle("-fx-background-color:#43a047;");
                             }
 
 
@@ -187,18 +201,13 @@ public class MainUiController {
                                 Cell.setContextMenu(null);
                             } else {
                                 Cell.setContextMenu(contextMenu);
+
                             }
                         }
                 );
                 return Cell;
             }
         });
-
-
-
-
-
-
 
 
 
@@ -330,6 +339,36 @@ public class MainUiController {
             todayAllToggle.setText("today");
 
         }
+
+
+
+    }
+
+    // edit item alert
+    private void editItemAlert()  {
+        Dialog<ButtonType> dialog = new Dialog<>();
+        dialog.initOwner(mainUi.getScene().getWindow());
+        FXMLLoader fxmlLoader = new FXMLLoader();
+        dialog.setTitle("edit "+selectedItem.getTitle());
+        fxmlLoader.setLocation(getClass().getResource("dialog/editData/EditData.fxml"));
+
+        try {
+            dialog.getDialogPane().setContent(fxmlLoader.load());
+
+
+
+        }catch (Exception e){
+            System.out.println(e.getCause());
+        }
+        dialog.getDialogPane().getButtonTypes().addAll(ButtonType.OK,ButtonType.CANCEL);
+        EditData controller=fxmlLoader.getController();
+        controller.setToDoItem(selectedItem);
+       Optional<ButtonType> reasult=dialog.showAndWait();
+       if (reasult.isPresent() && reasult.get().equals(ButtonType.OK)){
+           controller.saveData();
+           toDoListView.refresh();
+
+       }
 
 
 

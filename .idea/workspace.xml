@@ -7,20 +7,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="244e221c-d77b-41ef-9229-aa6caeceaeac" name="Default Changelist" comment="redme image file update">
+      <change afterPath="$PROJECT_DIR$/out/production/main/sample/MainUiController$7.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/main/sample/dialog/editData/EditData.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/main/sample/dialog/editData/EditData.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sample/dialog/editData/EditData.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sample/dialog/editData/EditData.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataTxt.txt" beforeDir="false" afterPath="$PROJECT_DIR$/dataTxt.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/main/sample/MainUiController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/sample/MainUiController$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/main/sample/MainUiController$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/sample/MainUiController$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/main/sample/MainUiController$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/sample/MainUiController$3.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/main/sample/MainUiController$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/sample/MainUiController$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/main/sample/MainUiController$5$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/sample/MainUiController$5$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/main/sample/MainUiController$5$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/sample/MainUiController$6$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/main/sample/MainUiController$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/sample/MainUiController$5.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/main/sample/MainUiController$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/sample/MainUiController$6.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/main/sample/MainUiController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/sample/MainUiController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/main/sample/icons/warning.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/main/sample/dialog/addData/addNewDialog.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/sample/dialog/addData/addNewDialog.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/main/sample/mainUi.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/sample/mainUi.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/main/sample/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/sample/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/sample/MainUiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sample/MainUiController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sample/icons/warning.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sample/resources/icons/warning.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sample/dialog/addData/addNewDialog.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sample/dialog/addData/addNewDialog.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/sample/mainUi.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sample/mainUi.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sample/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sample/style.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -37,9 +45,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="FxmlFile" />
-        <option value="Class" />
         <option value="CSS File" />
+        <option value="Class" />
+        <option value="FxmlFile" />
       </list>
     </option>
   </component>
@@ -138,6 +146,8 @@
       <workItem from="1565914847163" duration="722000" />
       <workItem from="1565916709415" duration="10000" />
       <workItem from="1566173975793" duration="1764000" />
+      <workItem from="1566242795187" duration="5995000" />
+      <workItem from="1566269889649" duration="8285000" />
     </task>
     <servers />
   </component>

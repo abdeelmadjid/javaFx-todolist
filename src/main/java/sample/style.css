@@ -1,10 +1,48 @@
+
 #todayAllToggle:selected{
-    -fx-background-color: #0096C9;
+    -fx-background-color: #3592C4;
+    -fx-background-radius: 0;
     -fx-text-fill: white;
 }
 #todayAllToggle{
      -fx-background-color: transparent;
+    -fx-text-fill: black;
 }
 #todayAllToggle:hover{
-    -fx-background-color: #00afee;
+    -fx-background-color: #3592C4;
+    -fx-background-radius: 0;
+    -fx-text-fill: white;
 }
+
+
+.list-cell {
+    -fx-text-fill: black; /* 5 */
+}
+.list-cell:odd {
+    -fx-background-color: white; /* 1 */
+}
+.list-cell:even {
+    -fx-background-color: #e0e7d3; /* for information */
+}
+.list-cell:filled:hover {
+    -fx-background-color: #3592C4; /* 2 */
+    -fx-text-fill: white; /* 5 */
+}
+.list-cell:filled:selected{
+    -fx-background-color: #3592C4; /* 2 */
+    -fx-text-fill: white;
+}
+/*.list-cell:empty:hover {*/
+/*    -fx-background-color: #3592C4; !* 2 *!*/
+/*    -fx-text-fill: white; !* 5 *!*/
+/*}*/
+
+
+
+
+
+
+
+
+
+
