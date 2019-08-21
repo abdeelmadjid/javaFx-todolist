@@ -8,6 +8,7 @@ import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
@@ -26,6 +27,10 @@ import java.util.Optional;
 import java.util.function.Predicate;
 
 public class MainUiController {
+    @FXML
+    private MenuItem darkMenu;
+    @FXML
+    private SplitPane split;
 
     @FXML
     private ToggleButton todayAllToggle;
@@ -45,13 +50,13 @@ public class MainUiController {
     private ContextMenu contextMenu;
     private SortedList<ToDoItem> sortedList;
     private FilteredList<ToDoItem> filteredList;
-
+    private boolean dark;
+    private String darkCss;
+    private double splitD;
     //task=data=todoData=item this is just a hint so u dont get lost in documentation
 
     @FXML
     public void initialize() throws FileNotFoundException {
-
-
 
         //setting up the info menuItem dialog
         MenuItem info=new MenuItem("info");
@@ -101,6 +106,7 @@ public class MainUiController {
         toDoListView.getSelectionModel().selectedItemProperty().addListener(new ChangeListener<ToDoItem>() {
             @Override
             public void changed(ObservableValue<? extends ToDoItem> observable, ToDoItem oldValue, ToDoItem newValue) {
+
                 if (newValue!=null){
                     ToDoItem item=(ToDoItem) toDoListView.getSelectionModel().getSelectedItem();
                     DateTimeFormatter dtf=DateTimeFormatter.ofPattern("MMMM d, yyyy");
@@ -208,9 +214,6 @@ public class MainUiController {
             }
         });
 
-
-
-
     }
 
     //setting up the dialodg for adding new data
@@ -219,6 +222,7 @@ public class MainUiController {
         //make sure that our listview is showing all the data not filtered one so we can select the item that just had ben added
         if (!todayAllToggle.isSelected())todayOrAll();
         Dialog<ButtonType> dialog = new Dialog<>();
+        dialog.setResizable(true);
         dialog.initOwner(mainUi.getScene().getWindow());
         FXMLLoader fxmlLoader = new FXMLLoader();
 
@@ -235,6 +239,8 @@ public class MainUiController {
                 //a looop that make the Add dilog keep shoing when useer atempt to save new data whith empty (date....todoData...tiltle)
                 while (true){
                     AddNewDialogController controller = fxmlLoader.getController();
+
+
                     Optional<ButtonType> resault = dialog.showAndWait();
 
 
@@ -262,7 +268,7 @@ public class MainUiController {
                 }
 
             } catch (Exception e) {
-                System.out.println(e.getMessage());
+                System.out.println(e.getCause());
                 return;
             }
 
@@ -285,19 +291,25 @@ public class MainUiController {
 
     // delete confirmation alert
     private void deleteItemAlert(){
-        Alert alert=new Alert(Alert.AlertType.CONFIRMATION);
+        Alert alert=new Alert(Alert.AlertType.NONE);
+        if(dark){
+            alert.getDialogPane().getStylesheets().add(darkCss);
+        }
 
 
-        alert.setTitle("delte confirmation");
-        alert.setHeaderText("delte "+selectedItem.getTitle());
-        alert.setContentText("are you sure u want to delte "+selectedItem.getTitle());
+
+        alert.setTitle("Delte confirmation");
+        alert.setHeaderText("Delte "+selectedItem.getTitle());
+        alert.setContentText("Are you sure u want to delte "+selectedItem.getTitle());
 
 
+        alert.getButtonTypes().addAll(ButtonType.OK,ButtonType.CANCEL);
 
 
         Optional<ButtonType> reasult=alert.showAndWait();
         if (reasult.isPresent() && (reasult.get()==ButtonType.OK)){
            ToDoDataHandeler.getInstance().deleteItem(selectedItem);
+           toDoListView.refresh();
 
         }
 
@@ -348,7 +360,7 @@ public class MainUiController {
         Dialog<ButtonType> dialog = new Dialog<>();
         dialog.initOwner(mainUi.getScene().getWindow());
         FXMLLoader fxmlLoader = new FXMLLoader();
-        dialog.setTitle("edit "+selectedItem.getTitle());
+        dialog.setTitle("Edit "+selectedItem.getTitle());
         fxmlLoader.setLocation(getClass().getResource("dialog/editData/EditData.fxml"));
 
         try {
@@ -372,10 +384,38 @@ public class MainUiController {
 
 
     }
+    @FXML
+    public void updateTheme(){
+        darkCss = this.getClass().getResource("dark.css").toExternalForm();
+        Scene scene= mainUi.getScene();
+        if (!dark){
+            scene.getStylesheets().add(darkCss);
+            mainUi.getStylesheets().add(darkCss);
+            darkMenu.setText("Light Mode");
+            dark=true;
+        }else {
+            scene.getStylesheets().remove(darkCss);
+            mainUi.getStylesheets().remove(darkCss);
+            darkMenu.setText("Dark Mode");
+            dark=false;
+        }
+    }
 
-   
+    public void updateThemeData(boolean dark,double splitD){
+        this.dark=!dark;
+        this.splitD=splitD;
+        split.setDividerPositions(this.splitD);
+        updateTheme();
+    }
 
+    public boolean isDark() {
+        return dark;
+    }
 
-
+    public double getSplitD() {
+        double[] splitDs=split.getDividerPositions();
+        splitD=splitDs[0];
+        return splitD;
+    }
 }
 

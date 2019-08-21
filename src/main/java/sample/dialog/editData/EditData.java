@@ -3,9 +3,12 @@ package sample.dialog.editData;
 import javafx.fxml.FXML;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.TextField;
+import javafx.scene.layout.AnchorPane;
 import sample.datamodel.ToDoItem;
 
 public class EditData {
+    @FXML
+    private AnchorPane editUi;
     @FXML
     private TextField title;
 
@@ -24,6 +27,7 @@ public class EditData {
         toDoItem.setTitle(title.getText());
         toDoItem.setDate(date.getValue());
     }
+
 
 
 

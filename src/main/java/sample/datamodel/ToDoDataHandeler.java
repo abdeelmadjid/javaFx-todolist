@@ -13,11 +13,12 @@ import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.Iterator;
 
-public class ToDoDataHandeler {
-    private static ToDoDataHandeler instance=new ToDoDataHandeler();
-    private static  String fileName="dataTxt.txt";
+public class ToDoDataHandeler  {
+    private static ToDoDataHandeler instance = new ToDoDataHandeler();
+    private static String fileName = "dataTxt.txt";
     private ObservableList<ToDoItem> toDoItems;
     private DateTimeFormatter dtf;
+
 
     public static ToDoDataHandeler getInstance(){
      return instance;

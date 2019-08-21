@@ -6,17 +6,19 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<DialogPane fx:id="deleteDilogPane" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.dialog.info.InfoDialogController">
+<DialogPane fx:id="deleteDilogPane" stylesheets="@../../style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.dialog.info.InfoDialogController">
 
     <content>
-        <GridPane alignment="CENTER" vgap="15">
-            <Label alignment="CENTER" text="this is my first javafx app i hope u like it" GridPane.columnIndex="0" GridPane.rowIndex="0" />
-            <Label fx:id="gmail" alignment="CENTER" onMouseClicked="#openGmail" onMouseEntered="#focusGmail" onMouseExited="#unfocusGmail" prefHeight="17.0" prefWidth="210.0" text="madjidmadjid0808@gmail.com" textFill="#3d32bc" GridPane.columnIndex="0" GridPane.rowIndex="1" />
-            <Label fx:id="instagram" alignment="CENTER" onMouseClicked="#openGram" onMouseEntered="#focusGram" onMouseExited="#unfocusGram" prefHeight="17.0" prefWidth="211.0" text="IG: @abdeel_madjid" textFill="#3d32bc" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+        <GridPane alignment="CENTER"  vgap="12">
+            <Label style="-fx-font-family:'Arial Black', Gadget, sans-serif" text="This javafx todolist app enspired by Intellij ❤" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+            <Label fx:id="gmail" alignment="CENTER" onMouseClicked="#openGmail" prefHeight="17.0" prefWidth="268.0" text="Send me an Email" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+            <Label fx:id="instagram" alignment="CENTER" onMouseClicked="#openGram" prefHeight="17.0" prefWidth="270.0" text="Follow on me instagram" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+            <Label fx:id="github" alignment="CENTER" onMouseClicked="#openGithub" prefHeight="17.0" prefWidth="270.0" text="Star me on github" GridPane.columnIndex="0" GridPane.rowIndex="3" />
          <columnConstraints>
             <ColumnConstraints />
          </columnConstraints>
          <rowConstraints>
+            <RowConstraints />
             <RowConstraints />
             <RowConstraints />
             <RowConstraints />

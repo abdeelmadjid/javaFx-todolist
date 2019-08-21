@@ -8,6 +8,8 @@
   <component name="ChangeListManager">
     <list default="true" id="244e221c-d77b-41ef-9229-aa6caeceaeac" name="Default Changelist" comment="redme image file update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataTxt.txt" beforeDir="false" afterPath="$PROJECT_DIR$/dataTxt.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/main/sample/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/sample/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/main/sample/MainUiController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/sample/MainUiController$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/main/sample/MainUiController$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/sample/MainUiController$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/main/sample/MainUiController$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/sample/MainUiController$3.class" afterDir="false" />
@@ -17,9 +19,26 @@
       <change beforePath="$PROJECT_DIR$/out/production/main/sample/MainUiController$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/sample/MainUiController$6.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/main/sample/MainUiController$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/sample/MainUiController$7.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/main/sample/MainUiController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/sample/MainUiController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/main/sample/resources/icons/warning.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/main/sample/datamodel/ToDoDataHandeler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/sample/datamodel/ToDoDataHandeler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/main/sample/dialog/addData/AddNewDialogController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/sample/dialog/addData/AddNewDialogController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/main/sample/dialog/addData/addNewDialog.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/sample/dialog/addData/addNewDialog.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/main/sample/dialog/editData/EditData.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/sample/dialog/editData/EditData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/main/sample/dialog/editData/EditData.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/sample/dialog/editData/EditData.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/main/sample/dialog/info/InfoDialogController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/sample/dialog/info/InfoDialogController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/main/sample/dialog/info/infoDialog.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/sample/dialog/info/infoDialog.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/main/sample/mainUi.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/sample/mainUi.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/main/sample/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/sample/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sample/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sample/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/sample/MainUiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sample/MainUiController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sample/resources/icons/warning.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sample/datamodel/ToDoDataHandeler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sample/datamodel/ToDoDataHandeler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sample/dialog/addData/AddNewDialogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sample/dialog/addData/AddNewDialogController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sample/dialog/addData/addNewDialog.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sample/dialog/addData/addNewDialog.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sample/dialog/editData/EditData.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sample/dialog/editData/EditData.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sample/dialog/editData/EditData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sample/dialog/editData/EditData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sample/dialog/info/InfoDialogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sample/dialog/info/InfoDialogController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sample/dialog/info/infoDialog.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sample/dialog/info/infoDialog.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sample/mainUi.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sample/mainUi.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sample/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sample/style.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,18 +55,11 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="FxmlFile" />
         <option value="CSS File" />
         <option value="Class" />
-        <option value="FxmlFile" />
       </list>
     </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>requi</find>
-      <find>Sys</find>
-      <find>hey</find>
-    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -60,27 +72,28 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/sample/dialog/addData" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Language Defaults" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Console Font" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\madjid\Documents\IdeaProjects\IdeaProjects\javaFX todolist\src\main\java\sample" />
-      <recent name="C:\Users\madjid\Documents\IdeaProjects\IdeaProjects\TodoListLearning\src\main\java\sample\icons" />
-      <recent name="C:\Users\madjid\Documents\IdeaProjects\IdeaProjects\TodoListLearning\src\main\java" />
-    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="sample.resources" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\madjid\Documents\IdeaProjects\IdeaProjects\javaFX todolist\src\main\java\sample\dialog\addData" />
       <recent name="C:\Users\madjid\Documents\IdeaProjects\IdeaProjects\TodoListLearning\src\main\java\sample\icons" />
       <recent name="C:\Users\madjid\Documents\IdeaProjects\IdeaProjects\TodoListLearning\src\main\java\sample" />
       <recent name="C:\Users\madjid\Documents\IdeaProjects\IdeaProjects\TodoListLearning\src\main\resources" />
       <recent name="C:\Users\madjid\Documents\IdeaProjects\IdeaProjects\TodoListLearning\src\main\java\sample\datamodel" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\madjid\Documents\IdeaProjects\IdeaProjects\javaFX todolist\src\main\java\sample" />
+      <recent name="C:\Users\madjid\Documents\IdeaProjects\IdeaProjects\TodoListLearning\src\main\java\sample\icons" />
+      <recent name="C:\Users\madjid\Documents\IdeaProjects\IdeaProjects\TodoListLearning\src\main\java" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -138,7 +151,8 @@
       <workItem from="1565916709415" duration="10000" />
       <workItem from="1566173975793" duration="1764000" />
       <workItem from="1566242795187" duration="5995000" />
-      <workItem from="1566269889649" duration="8819000" />
+      <workItem from="1566269889649" duration="10023000" />
+      <workItem from="1566316081868" duration="23243000" />
     </task>
     <servers />
   </component>

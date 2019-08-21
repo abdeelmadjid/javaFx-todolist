@@ -32,17 +32,27 @@
     -fx-background-color: #3592C4; /* 2 */
     -fx-text-fill: white;
 }
-/*.list-cell:empty:hover {*/
-/*    -fx-background-color: #3592C4; !* 2 *!*/
-/*    -fx-text-fill: white; !* 5 *!*/
-/*}*/
 
-
-
-
-
-
-
-
+#gmail{
+    -fx-text-fill: #3E86A0;
+}
+#instagram{
+    -fx-text-fill: #3E86A0;
+}
+#gmail:hover{
+    -fx-text-fill: #4eb2d2;
+    -fx-font-size: 13;
+}
+#instagram:hover{
+    -fx-text-fill: #4eb2d2;
+    -fx-font-size: 13;
+}
+#github{
+    -fx-text-fill: #3E86A0;
+}
+#github:hover{
+    -fx-text-fill: #4eb2d2;
+    -fx-font-size: 13;
+}
 
 

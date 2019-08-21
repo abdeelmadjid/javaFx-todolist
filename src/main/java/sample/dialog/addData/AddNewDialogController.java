@@ -13,6 +13,7 @@ import java.time.LocalDate;
 
 public class AddNewDialogController {
 
+
     @FXML
     private Label errorLabel;
     @FXML
@@ -21,6 +22,7 @@ public class AddNewDialogController {
     private DatePicker datePicker;
     @FXML
     private TextArea todoTextArea;
+
 
     //add new item
     public String okButtonListner(){

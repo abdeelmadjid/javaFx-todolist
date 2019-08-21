@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.DatePicker?>
-<?import javafx.scene.control.DialogPane?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
@@ -11,33 +11,9 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<DialogPane fx:id="dilogPane" prefHeight="17"  stylesheets="@../../style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.dialog.addData.AddNewDialogController">
-
-
-    <content>
-
-
-        <GridPane hgap="10" vgap="10">
-            <Label fx:id="errorLabel" alignment="CENTER" prefHeight="17.0" prefWidth="430.0" text="ERROR:please enter all data" textFill="RED" visible="false" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="1">
-            <font>
-               <Font name="Symbol" size="12.0" />
-            </font></Label>
-
-
-                    <Label text="Data title" GridPane.rowIndex="2" />
-                    <TextField fx:id="titleTextField" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-
-
-                    <Label text="Data date" GridPane.rowIndex="3" />
-                    <DatePicker fx:id="datePicker" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-                    <VBox GridPane.rowIndex="4">
-                        <Label text="todo text" />
-
-                    </VBox>
-
-
-
-                    <TextArea fx:id="todoTextArea" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+<VBox fx:id="addUi" stylesheets="@../../style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.dialog.addData.AddNewDialogController">
+   <children>
+      <GridPane hgap="10" vgap="10">
          <columnConstraints>
             <ColumnConstraints />
             <ColumnConstraints />
@@ -50,9 +26,26 @@
             <RowConstraints />
             <RowConstraints />
          </rowConstraints>
-         
-
-
-        </GridPane>
-    </content>
-</DialogPane>
+         <children>
+            <Label fx:id="errorLabel" alignment="CENTER" prefHeight="17.0" prefWidth="430.0" text="ERROR:please enter all data" textFill="RED" visible="false" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Symbol" size="12.0" />
+               </font>
+            </Label>
+            <Label text="Data title" GridPane.rowIndex="2" />
+            <TextField fx:id="titleTextField" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label text="Data date" GridPane.rowIndex="3" />
+            <DatePicker fx:id="datePicker" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+         </children>
+      </GridPane>
+      <VBox>
+         <children>
+            <Label text="todo text" />
+            <TextArea fx:id="todoTextArea" prefHeight="299.0" prefWidth="492.0" />
+         </children>
+         <opaqueInsets>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </opaqueInsets>
+      </VBox>
+   </children>
+</VBox>
