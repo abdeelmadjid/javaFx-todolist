@@ -46,6 +46,7 @@ public class MainUiController {
     private ToDoItem selectedItem;
     @FXML
     private Menu menu;
+
     @FXML
     private ContextMenu contextMenu;
     private SortedList<ToDoItem> sortedList;
@@ -214,6 +215,7 @@ public class MainUiController {
             }
         });
 
+
     }
 
     //setting up the dialodg for adding new data
@@ -240,7 +242,7 @@ public class MainUiController {
                 while (true){
                     AddNewDialogController controller = fxmlLoader.getController();
 
-
+                    dialog.getDialogPane().setPrefHeight(400.0);
                     Optional<ButtonType> resault = dialog.showAndWait();
 
 
@@ -417,5 +419,7 @@ public class MainUiController {
         splitD=splitDs[0];
         return splitD;
     }
+
+
 }
 

@@ -56,3 +56,13 @@
 }
 
 
+#menu{
+    -fx-background-color: #F4F4F4;
+}
+#menu:hover{
+    -fx-background-color: #3592C4;
+}
+#menu:showing{
+    -fx-background-color: #3592C4;
+    -fx-text-fill: black;
+}

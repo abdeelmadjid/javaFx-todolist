@@ -23,7 +23,7 @@
                 <padding>
                     <Insets left="0" />
                 </padding>
-                <Menu fx:id="menu" text="file">
+                <Menu  fx:id="menu" text="file">
                     <items>
                         <MenuItem onAction="#addNewData" text="new file" />
                   <SeparatorMenuItem mnemonicParsing="false" />
@@ -52,7 +52,7 @@
 
 
         </ListView>
-              <VBox fx:id="box">
+              <VBox  fx:id="box">
                   <TextArea fx:id="todoTextArea" onKeyReleased="#updateTextArea" prefHeight="337.0" prefWidth="478.0" VBox.vgrow="ALWAYS" />
                   <HBox fx:id="boxx">
                       <Label fx:id="dateLabel" text="Due:">

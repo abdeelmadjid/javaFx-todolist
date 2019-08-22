@@ -14,6 +14,7 @@ import java.time.LocalDate;
 public class AddNewDialogController {
 
 
+
     @FXML
     private Label errorLabel;
     @FXML
