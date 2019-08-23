@@ -24,4 +24,35 @@ tomorrow  task here hello
 test
 2019-08-24
 test here ljc,zPO?REP?VVE
+ private static ToDoDataHandeler instance = new ToDoDataHandeler();
+    private static String fileName = "dataTxt.txt";
+    private ObservableList<ToDoItem> toDoItems;
+    private DateTimeFormatter dtf;
+
+
+    public static ToDoDataHandeler getInstance(){
+     return instance;
+    }
+
+    private ToDoDataHandeler() {
+        dtf = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+    }
+
+    public ObservableList<ToDoItem> getItems() {
+        return toDoItems;
+    }
+
+
+    //load data from our dataTxt.txt file
+    /**
+     * the data in txt file is like{
+     *     molly birthday                                  <<<<the title
+     *     2019-12-31                                      <<<<the date
+     *     go get cake an birthday gifts                   <<<<todotext
+     *     dont forget the fireworks
+     *     &:&:&:&:&:&:&:&:&:&:&:&:&:&:&:&:&:&:&:&:&:      <<<<separator the end of an todo tesk
+     *     job enterview                                   <<<<the title
+     *     2019-12-31                                      <<<<the date
+     *     go to google company 9:00 am                    <<<<todotext
+     * 
 &:&:&:&:&:&:&:&:&:&:&:&:&:&:&:&:&:&:&:&:&:

@@ -2,7 +2,7 @@
 javaFX todolist with file.txt database 
 
 
-[Preview](https://youtu.be/paTo-gPXmR4)
+[Preview](https://www.youtube.com/watch?v=pSSBQS_CYM4&t)
 
 
 
